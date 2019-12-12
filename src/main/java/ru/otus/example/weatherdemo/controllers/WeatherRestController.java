@@ -13,7 +13,7 @@ public class WeatherRestController {
 
     private final WeatherService weatherService;
 
-    public WeatherRestController(@Qualifier("weatherAggregationService") WeatherService weatherService) {
+    public WeatherRestController(@Qualifier("openWeatherService") WeatherService weatherService) {
         this.weatherService = weatherService;
     }
 
